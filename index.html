@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Grocery Cart</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body onload="fetchIssues()">
+    <div class="container">
+      <h1>My Grocery Cart</h1>
+      <div class="jumbotron">
+        <h3>Add New Cart Item:</h3>
+        <form id="issueInputForm">
+          <div class="form-group">
+            <label for="issueDescInput">Item</label>
+            <input type="text" class="form-control" id="issueDescInput" placeholder="State the cart item">
+          </div> 
+          <div class="form-group">
+            <label for="issueSeverityInput">Category of Item</label>
+             <select class="form-control" id="issueSeverityInput">
+              <option value="Appliances">Appliances</option>
+              <option value="Baby">Baby</option>
+              <option value="Beauty">Beauty</option>
+              <option value="Clothing, Luggage & Handbags">Clothing, Luggage & Handbags</option>
+              <option value="Computers">Computers</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Floral & Gift Baskets">Floral & Gift Baskets</option>
+              <option value="Furniture">Furniture</option>
+              <option value="Gift Cards & Tickets">Gift Cards & Tickets</option>
+              <option value="Gourmet Foods">Gourmet Foods</option>
+              <option value="Grocery, Household Essentials & Pet">Grocery, Household Essentials & Pet</option>
+              <option value="Health & Personal Care">Health & Personal Care</option>
+              <option value="Holiday & Seasonal">Holiday & Seasonal</option>
+              <option value="Home & Installation Services">Home & Installation Services</option>
+              <option value="Home & Kitchen">Home & Kitchen</option>
+              <option value="Home Improvement">Home Improvement</option>
+              <option value="Jewelery, Watches & Sunglasses">Jewelery, Watches & Sunglasses</option>
+              <option value="Mattresses">Mattresses</option>
+              <option value="Office Products">Office Products</option>
+              <option value="Patio, Lawn & Garden">Patio, Lawn & Garden</option>
+              <option value="Sports & Fitness">Sports & Fitness</option>
+              <option value="Tires & Auto">Tires & Auto</option>
+              <option value="Toys & Books">Toys & Books</option>
+            </select> 
+          </div>
+          <form id="issueInputForm">
+            <div class="form-group">
+              <label for="issueDescInput">Price</label>
+              <input type="text" class="form-control" id="issueDescInput" placeholder="State the price of the item">
+          </select> 
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="issuesList">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
